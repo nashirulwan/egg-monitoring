@@ -25,8 +25,9 @@ The device posts readings over HTTPS, the API stores them, and the dashboard rea
 
 #### Hardware
 
-ESP32, an MQ gas sensor, a DHT temperature/humidity sensor, a 4 channel relay driving two fans, a conveyor motor and a lamp, powered from an 18650 pack.
+ESP32, an MQ gas sensor, a DHT temperature/humidity sensor, a 4 channel relay driving two fans, a conveyor motor and a lamp, powered from an 18650 pack. The coop has 4 compartments (A001, A002, B001, B002) that map to the sensor channels in the dashboard.
 
+![coop build](docs/coop.jpg)
 ![wiring](docs/circuit.png)
 
 #### Run the dashboard
