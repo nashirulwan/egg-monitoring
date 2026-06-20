@@ -1,19 +1,40 @@
 ### Egg Monitoring
 
-End-to-end IoT system for a poultry farm — ESP32 sensors stream temperature, humidity, and gas readings to a Next.js dashboard with remote actuator control (fan, lamp, conveyor) and an AI layer for freshness/anomaly prediction. IoT course project.
+An end to end IoT setup for a poultry farm. An ESP32 reads temperature, humidity and gas sensors and pushes the data to a Next.js dashboard, which shows live charts, logs egg production per sensor, lets you control actuators (fan, lamp, conveyor) remotely, and runs an AI layer that predicts freshness and flags anomalies. Built for an IoT course.
+
+Was live at `egg.nashiru.me` during the semester.
+
+![dashboard](docs/dashboard.png)
+![AI predictions](docs/prediksi-ai.png)
 
 #### What's inside
 
-- `web/` — Next.js dashboard + API (Prisma + SQLite), real-time charts and actuator control
-- `firmware/` — ESP32 device firmware (PlatformIO) that reads the sensors
-- `ml/` — AI prediction pipeline notebook (`egg_monitoring_ai_pipeline.ipynb`) + sample data
-- `protocol-comparison/` — side study comparing MQTT vs HTTP for shipping sensor data from an ESP32
-- `docs/` — design notes (AI prediction)
+- `web/`: the Next.js dashboard and API (Prisma + SQLite). Real time charts, egg logs, actuator control, AI prediction page.
+- `firmware/`: ESP32 firmware (PlatformIO) that reads the sensors and posts the data.
+- `ml/`: the AI pipeline notebook plus a small data export.
+- `protocol-comparison/`: a side experiment comparing MQTT vs HTTP for shipping the sensor data.
 
-#### Stack
+#### How it works
 
-ESP32 · Next.js · Prisma / SQLite · Cloudflare Tunnel · Python (ML)
+```
+ESP32 + sensors  -->  HTTPS  -->  Next.js API  -->  SQLite (Prisma)  -->  dashboard
+                                       |
+                                       +-->  AI predictions (freshness / anomaly)
+```
 
-#### Notes
+The device posts readings over HTTPS, the API stores them, and the dashboard reads them back for the charts and the AI summary.
 
-Built for an IoT course and self-hosted at `egg.nashiru.me` during the semester. The bundled `web/prisma/dev.db` holds real captured data (~4.3k sensor readings, 162 egg events), so the dashboard and notebook run out of the box.
+#### Run the dashboard
+
+```bash
+cd web
+npm install
+npx prisma generate
+npm run dev
+```
+
+It ships with `web/prisma/dev.db`, which already holds real captured data (around 4,300 sensor readings and 162 egg events), so the dashboard and the notebook work without a live device.
+
+#### License
+
+MIT, see LICENSE.
