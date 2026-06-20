@@ -5,14 +5,13 @@ An end to end IoT setup for a poultry farm. An ESP32 reads temperature, humidity
 Was live at `egg.nashiru.me` during the semester.
 
 ![dashboard](docs/dashboard.png)
-![AI predictions](docs/prediksi-ai.png)
+![AI predictions](docs/ai.png)
 
 #### What's inside
 
 - `web/`: the Next.js dashboard and API (Prisma + SQLite). Real time charts, egg logs, actuator control, AI prediction page.
 - `firmware/`: ESP32 firmware (PlatformIO) that reads the sensors and posts the data.
 - `ml/`: the AI pipeline notebook plus a small data export.
-- `protocol-comparison/`: a side experiment comparing MQTT vs HTTP for shipping the sensor data.
 
 #### How it works
 
@@ -24,6 +23,12 @@ ESP32 + sensors  -->  HTTPS  -->  Next.js API  -->  SQLite (Prisma)  -->  dashbo
 
 The device posts readings over HTTPS, the API stores them, and the dashboard reads them back for the charts and the AI summary.
 
+#### Hardware
+
+ESP32, an MQ gas sensor, a DHT temperature/humidity sensor, a 4 channel relay driving two fans, a conveyor motor and a lamp, powered from an 18650 pack.
+
+![wiring](docs/circuit.png)
+
 #### Run the dashboard
 
 ```bash
@@ -34,6 +39,10 @@ npm run dev
 ```
 
 It ships with `web/prisma/dev.db`, which already holds real captured data (around 4,300 sensor readings and 162 egg events), so the dashboard and the notebook work without a live device.
+
+#### Related
+
+The MQTT vs HTTP study that informed the transport choice lives in its own repo: [http-mqtt](https://github.com/nashirulwan/http-mqtt).
 
 #### License
 
