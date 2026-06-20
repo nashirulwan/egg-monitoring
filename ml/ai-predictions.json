@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-05-03T16:30:03Z",
+  "targetMonth": "2026-05",
+  "modelVersion": "xgb-rf-iforest-v1",
+  "metrics": {
+    "regression_mae": 0.652,
+    "classification_accuracy": 0.667,
+    "test_rows": 3
+  },
+  "predictions": [
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A001",
+      "predictedEggs7d": 5.2,
+      "predictedEggs30d": 23.0,
+      "predictedMonthlyEggs": 23.0,
+      "predictedStatus": "Perlu Dipantau",
+      "confidence": 0.73,
+      "afkirRiskScore": 0.36,
+      "anomalyScore": 0.62,
+      "anomalyLabel": "Tinggi",
+      "featureSnapshot": {
+        "sourceMonth": "2026-04",
+        "prevMonthlyEggs": 23,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 24
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A002",
+      "predictedEggs7d": 4.4,
+      "predictedEggs30d": 19.7,
+      "predictedMonthlyEggs": 19.7,
+      "predictedStatus": "Perlu Dipantau",
+      "confidence": 0.72,
+      "afkirRiskScore": 0.46,
+      "anomalyScore": 0.0,
+      "anomalyLabel": "Rendah",
+      "featureSnapshot": {
+        "sourceMonth": "2026-04",
+        "prevMonthlyEggs": 19,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 20
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B001",
+      "predictedEggs7d": 3.4,
+      "predictedEggs30d": 15.1,
+      "predictedMonthlyEggs": 15.1,
+      "predictedStatus": "Afkir",
+      "confidence": 0.73,
+      "afkirRiskScore": 0.83,
+      "anomalyScore": 0.83,
+      "anomalyLabel": "Tinggi",
+      "featureSnapshot": {
+        "sourceMonth": "2026-04",
+        "prevMonthlyEggs": 14,
+        "prevEggs7d": 3,
+        "daysWithoutEgg": 1,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 15
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B002",
+      "predictedEggs7d": 2.1,
+      "predictedEggs30d": 9.5,
+      "predictedMonthlyEggs": 9.5,
+      "predictedStatus": "Afkir",
+      "confidence": 0.95,
+      "afkirRiskScore": 0.97,
+      "anomalyScore": 1.0,
+      "anomalyLabel": "Tinggi",
+      "featureSnapshot": {
+        "sourceMonth": "2026-04",
+        "prevMonthlyEggs": 8,
+        "prevEggs7d": 2,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 9
+      }
+    }
+  ],
+  "testSamples": [
+    {
+      "targetMonth": "2026-04",
+      "sensorId": "A002",
+      "actualMonthlyEggs": 19.0,
+      "predictedMonthlyEggs": 19.5,
+      "actualStatus": "Afkir",
+      "predictedStatus": "Perlu Dipantau",
+      "anomalyScore": 0.0
+    },
+    {
+      "targetMonth": "2026-04",
+      "sensorId": "B001",
+      "actualMonthlyEggs": 14.0,
+      "predictedMonthlyEggs": 14.4,
+      "actualStatus": "Afkir",
+      "predictedStatus": "Afkir",
+      "anomalyScore": 0.78
+    },
+    {
+      "targetMonth": "2026-04",
+      "sensorId": "B002",
+      "actualMonthlyEggs": 8.0,
+      "predictedMonthlyEggs": 9.1,
+      "actualStatus": "Afkir",
+      "predictedStatus": "Afkir",
+      "anomalyScore": 1.0
+    }
+  ]
+}

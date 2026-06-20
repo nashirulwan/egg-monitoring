@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-05-03T16:12:27.728Z",
+  "deviceId": "esp32-01",
+  "months": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "fullMonths": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04"
+  ],
+  "dateRange": {
+    "start": "2026-01-01T00:00:00.000Z",
+    "end": "2026-05-02T23:59:59.999Z"
+  },
+  "trainRows": [
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A001",
+      "sourceMonth": "2026-01",
+      "targetMonth": "2026-02",
+      "features": {
+        "sensorIndex": 0,
+        "prevMonthlyEggs": 26,
+        "prevEggs7d": 6,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.4,
+        "avgHumidity30d": 54.54,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 7,
+        "rollingEggAvg2m": 13
+      },
+      "target": {
+        "monthlyEggs": 25,
+        "status": "Produktif"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A002",
+      "sourceMonth": "2026-01",
+      "targetMonth": "2026-02",
+      "features": {
+        "sensorIndex": 1,
+        "prevMonthlyEggs": 22,
+        "prevEggs7d": 6,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.4,
+        "avgHumidity30d": 54.54,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 7,
+        "rollingEggAvg2m": 11
+      },
+      "target": {
+        "monthlyEggs": 21,
+        "status": "Perlu Dipantau"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B001",
+      "sourceMonth": "2026-01",
+      "targetMonth": "2026-02",
+      "features": {
+        "sensorIndex": 2,
+        "prevMonthlyEggs": 16,
+        "prevEggs7d": 4,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.4,
+        "avgHumidity30d": 54.54,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 7,
+        "rollingEggAvg2m": 8
+      },
+      "target": {
+        "monthlyEggs": 16,
+        "status": "Afkir"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B002",
+      "sourceMonth": "2026-01",
+      "targetMonth": "2026-02",
+      "features": {
+        "sensorIndex": 3,
+        "prevMonthlyEggs": 11,
+        "prevEggs7d": 3,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.4,
+        "avgHumidity30d": 54.54,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 7,
+        "rollingEggAvg2m": 5.5
+      },
+      "target": {
+        "monthlyEggs": 10,
+        "status": "Afkir"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A001",
+      "sourceMonth": "2026-02",
+      "targetMonth": "2026-03",
+      "features": {
+        "sensorIndex": 0,
+        "prevMonthlyEggs": 25,
+        "prevEggs7d": 6,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.42,
+        "avgHumidity30d": 54.79,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 10,
+        "rollingEggAvg2m": 12.5
+      },
+      "target": {
+        "monthlyEggs": 24,
+        "status": "Produktif"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A002",
+      "sourceMonth": "2026-02",
+      "targetMonth": "2026-03",
+      "features": {
+        "sensorIndex": 1,
+        "prevMonthlyEggs": 21,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.42,
+        "avgHumidity30d": 54.79,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 10,
+        "rollingEggAvg2m": 10.5
+      },
+      "target": {
+        "monthlyEggs": 20,
+        "status": "Perlu Dipantau"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B001",
+      "sourceMonth": "2026-02",
+      "targetMonth": "2026-03",
+      "features": {
+        "sensorIndex": 2,
+        "prevMonthlyEggs": 16,
+        "prevEggs7d": 4,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.42,
+        "avgHumidity30d": 54.79,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 10,
+        "rollingEggAvg2m": 8
+      },
+      "target": {
+        "monthlyEggs": 15,
+        "status": "Afkir"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B002",
+      "sourceMonth": "2026-02",
+      "targetMonth": "2026-03",
+      "features": {
+        "sensorIndex": 3,
+        "prevMonthlyEggs": 10,
+        "prevEggs7d": 3,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.42,
+        "avgHumidity30d": 54.79,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 10,
+        "rollingEggAvg2m": 5
+      },
+      "target": {
+        "monthlyEggs": 9,
+        "status": "Afkir"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A001",
+      "sourceMonth": "2026-03",
+      "targetMonth": "2026-04",
+      "features": {
+        "sensorIndex": 0,
+        "prevMonthlyEggs": 24,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.45,
+        "avgHumidity30d": 54.77,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 25
+      },
+      "target": {
+        "monthlyEggs": 23,
+        "status": "Perlu Dipantau"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A002",
+      "sourceMonth": "2026-03",
+      "targetMonth": "2026-04",
+      "features": {
+        "sensorIndex": 1,
+        "prevMonthlyEggs": 20,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.45,
+        "avgHumidity30d": 54.77,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 21
+      },
+      "target": {
+        "monthlyEggs": 19,
+        "status": "Afkir"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B001",
+      "sourceMonth": "2026-03",
+      "targetMonth": "2026-04",
+      "features": {
+        "sensorIndex": 2,
+        "prevMonthlyEggs": 15,
+        "prevEggs7d": 3,
+        "daysWithoutEgg": 1,
+        "avgTemp30d": 28.45,
+        "avgHumidity30d": 54.77,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 15.5
+      },
+      "target": {
+        "monthlyEggs": 14,
+        "status": "Afkir"
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B002",
+      "sourceMonth": "2026-03",
+      "targetMonth": "2026-04",
+      "features": {
+        "sensorIndex": 3,
+        "prevMonthlyEggs": 9,
+        "prevEggs7d": 2,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.45,
+        "avgHumidity30d": 54.77,
+        "gasAlertCount30d": 27,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 10
+      },
+      "target": {
+        "monthlyEggs": 8,
+        "status": "Afkir"
+      }
+    }
+  ],
+  "predictionRows": [
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A001",
+      "sourceMonth": "2026-04",
+      "targetMonth": "2026-05",
+      "targetMonthDays": 31,
+      "features": {
+        "sensorIndex": 0,
+        "prevMonthlyEggs": 23,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 24
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "A002",
+      "sourceMonth": "2026-04",
+      "targetMonth": "2026-05",
+      "targetMonthDays": 31,
+      "features": {
+        "sensorIndex": 1,
+        "prevMonthlyEggs": 19,
+        "prevEggs7d": 5,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 20
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B001",
+      "sourceMonth": "2026-04",
+      "targetMonth": "2026-05",
+      "targetMonthDays": 31,
+      "features": {
+        "sensorIndex": 2,
+        "prevMonthlyEggs": 14,
+        "prevEggs7d": 3,
+        "daysWithoutEgg": 1,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 15
+      }
+    },
+    {
+      "deviceId": "esp32-01",
+      "sensorId": "B002",
+      "sourceMonth": "2026-04",
+      "targetMonth": "2026-05",
+      "targetMonthDays": 31,
+      "features": {
+        "sensorIndex": 3,
+        "prevMonthlyEggs": 8,
+        "prevEggs7d": 2,
+        "daysWithoutEgg": 0,
+        "avgTemp30d": 28.38,
+        "avgHumidity30d": 54.6,
+        "gasAlertCount30d": 31,
+        "gasAlertCount7d": 5,
+        "rollingEggAvg2m": 9
+      }
+    }
+  ]
+}

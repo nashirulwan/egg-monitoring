@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+
+# python (ml + protocol-comparison)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
